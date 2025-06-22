@@ -74,21 +74,20 @@
 git clone https://github.com/HanSeulChung/musoonZupZup-server.git
 
 # 환경 설정 값 넣기
-```
-# ===== email =====
+===== email =====
 spring.mail.host=smtp.gmail.com
 spring.mail.port=587
 spring.mail.username=
 spring.mail.password=
 spring.mail.properties.mail.smtp.auth=true
 spring.mail.properties.mail.smtp.starttls.enable=true
-# ==== openAI ====
+==== openAI ====
 openAI.api.key=
 
-# ==== KakaoApi ====
+==== KakaoApi ====
 kakao.api.key=
 
-# ==== TMap API ====
+==== TMap API ====
 tMap.api.key=
 ```
 

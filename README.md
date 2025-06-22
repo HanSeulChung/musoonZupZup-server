@@ -47,7 +47,7 @@
 ## 👨‍👩‍👧‍👦 **팀원 소개**
 
 - 👨‍💻 정한슬 — 백엔드 & 프론트엔드 & 발표
-- 🧑‍💻 박재환 — 백엔드 & DB 설계
+- 👩‍💻 박재환 — 백엔드 & DB 설계
 - 👩‍💻 신해봄 — 백엔드 & 베타 테스트 & 영상 작업
 
 ## 🛠️ **기술 스택**
@@ -63,7 +63,7 @@
 
 - 📐 [Figma 와이어프레임 보기](https://www.figma.com/board/oiNWP1yNI0blErRgM71TmP/musoonzup?node-id=0-1&p=f)  
 - 📊 [ERD 설계도 보기](https://www.erdcloud.com/d/5w4dttMHoGejnFLs9)  
-- 💻 [Frontend GitLab Repo](https://lab.ssafy.com/ssafy_13th_18class/999_final/ssafy_home_final_chunghanseul_parkjaehwan_front)
+- 💻 [Frontend Github Repo](https://github.com/HanSeulChung/musoonZupZup-client.git)
 
 ## ⚙️ **설치 및 실행 방법**
 
@@ -71,16 +71,26 @@
 ---
 ```bash
 # 저장소 클론
-git clone https://lab.ssafy.com/ssafy_13th_18class/999_final/ssafy_home_final_chunghanseul_parkjaehwan_shinhaebom.git
+git clone https://github.com/HanSeulChung/musoonZupZup-server.git
 
-# 환경 설정 파일 생성 
-# src/main/java/resources/application-email.properties
+# 환경 설정 값 넣기
+```
+# ===== email =====
 spring.mail.host=smtp.gmail.com
 spring.mail.port=587
 spring.mail.username=
 spring.mail.password=
 spring.mail.properties.mail.smtp.auth=true
 spring.mail.properties.mail.smtp.starttls.enable=true
+# ==== openAI ====
+openAI.api.key=
+
+# ==== KakaoApi ====
+kakao.api.key=
+
+# ==== TMap API ====
+tMap.api.key=
+```
 
 # 스키마 생성
 # src/main/java/resources/SQL_Setting 참고
@@ -88,7 +98,7 @@ spring.mail.properties.mail.smtp.starttls.enable=true
 2. DB_UpdateApi실행방법.txt을 토대로 청약 정보 DB에 insert 작업 진행
 ```
 ```bash
-# DB_UpdateApi실행방법.txt
+# DB_UpdateApi 실행방법.txt
 사전 작업 
 src/main/resources/SQL Setting 내부의 Schema.sql, InsertBasicInfo.sql 순으로 SQL 을 실행시켜 DB 테이블을 생성한다.
 
@@ -114,7 +124,7 @@ docker-compose up -d
 ---
 ```bash
 # 저장소 클론
-git clone https://lab.ssafy.com/ssafy_13th_18class/999_final/ssafy_home_final_chunghanseul_parkjaehwan_front.git
+git clone https://github.com/HanSeulChung/musoonZupZup-client.git
 
 npm install
 npm run dev
